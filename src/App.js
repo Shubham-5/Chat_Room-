@@ -1,4 +1,4 @@
-import { io } from "https://cdn.socket.io/4.4.1/socket.io.esm.min.js";
+import { io } from "socket.io-client";
 import { useEffect, useState } from "react";
 import ChatRoom from "./components/ChatRoom";
 import JoinRoom from "./components/JoinRoom";
