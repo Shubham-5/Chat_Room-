@@ -1,5 +1,6 @@
 const Chat = ({ messageContent, userName }) => {
   const me = messageContent.username;
+  console.log(me, userName);
   return (
     <div className='message' id={userName === me ? "you" : "other"}>
       <div>

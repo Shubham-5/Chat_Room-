@@ -2,7 +2,7 @@ import { io } from "socket.io-client";
 import { useEffect, useState } from "react";
 import ChatRoom from "./components/ChatRoom";
 import JoinRoom from "./components/JoinRoom";
-const socket = io.connect(process.env.REACT_APP_URI);
+const socket = io.connect("https://chat-room-shubh.herokuapp.com/");
 
 function App() {
   //isJoined state

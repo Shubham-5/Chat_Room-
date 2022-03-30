@@ -1,7 +1,7 @@
 import ScrollToBottom from "react-scroll-to-bottom";
 import Chat from "./Chat";
 
-const ChatRoom = ({ sendMessage, setMessage, messages, message }) => {
+const ChatRoom = ({ sendMessage, setMessage, messages, message, userName }) => {
   return (
     <div className='chat-window'>
       <div className='chat-header'>
@@ -11,7 +11,9 @@ const ChatRoom = ({ sendMessage, setMessage, messages, message }) => {
         <ScrollToBottom className='message-container'>
           {messages &&
             messages.map((messageContent) => {
-              return <Chat messageContent={messageContent} />;
+              return (
+                <Chat messageContent={messageContent} userName={userName} />
+              );
             })}
         </ScrollToBottom>
       </div>
